@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">myNoteBook</string>
     <string name="action_settings">Settings</string>
+    <string name="edit_title">Enter a title</string>
+    <string name="edit_note">Enter a note</string>
+    <string name="button_save">Save</string>
 </resources>
