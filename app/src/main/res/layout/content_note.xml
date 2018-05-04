@@ -8,6 +8,16 @@
     android:orientation="vertical"
     android:padding="8dp">
 
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/transparent"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp" />
+
 
     <EditText
         android:id="@+id/text_note_title"
@@ -15,13 +25,16 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/transparent"
         android:ems="10"
         android:hint="Note Title"
         android:inputType="textMultiLine"
+        android:singleLine="false"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
     <Spinner
         android:id="@+id/spinner_notebooks"
@@ -37,9 +50,11 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:background="@color/transparent"
         android:ems="10"
         android:hint="What is on your mind?"
         android:inputType="textMultiLine"
+        android:textSize="13sp"
         app:layout_constraintEnd_toEndOf="@+id/spinner_notebooks"
         app:layout_constraintStart_toStartOf="@+id/spinner_notebooks"
         app:layout_constraintTop_toBottomOf="@+id/spinner_notebooks" />
